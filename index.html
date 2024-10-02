@@ -35,9 +35,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 		rel="stylesheet">
-
 
 	<!-- clock   -->
 	<link rel="stylesheet" href="css/responsive-clock.css">
@@ -46,6 +45,9 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
+	<!-- Photoswipe CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/photoswipe/dist/photoswipe.css">
+	<link rel="stylesheet" href="https://unpkg.com/photoswipe/dist/default-skin/default-skin.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Owl Carousel  -->
@@ -71,18 +73,33 @@
 		<header id="fh5co-header" role="banner" class="relative bg-cover bg-center"
 			style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
 			<div class="absolute inset-0 bg-black opacity-50"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
+			<div class="firefly"></div>
 			<div class="container mx-auto relative z-10 flex items-center justify-center min-h-screen">
 				<div class="text-center animate-box" data-animate-effect="fadeIn">
-					<h1 class="text-white text-7xl font-bold cursive">Liz &amp; Miko</h1>
+					<h1 class="text-white text-8xl font-light font2">Liz &amp; Miko</h1>
 					<br>
 					<img src="images/tree.png" alt="Liz + Miko" class="mx-auto w-72 h-72 opacity-50"
 						style="border-radius: 100%;">
-					<h2 class="text-white text-2xl mt-4 cursive">January 26, 2025</h2>
+					<h2 class="text-white text-2xl mt-4 font1-italic">January 26, 2025</h2>
 					<h2 class="text-white text-5xl mt-2 cursive">Guadalajara, Mexico</h2>
 					<div class="flipTimebox mt-6">
 						<div class="clock clock-fix"></div>
 					</div>
-					<p class="text-gray-300 mt-4 font1">Please RSVP by Responding to the Email/Whatsapp</p>
+					<p class="text-gray-300 mt-4 font1">Please RSVP by Responding to the email/Whatsapp</p>
 				</div>
 			</div>
 		</header>
@@ -92,7 +109,7 @@
 		<div id="fh5co-venue" class="py-24 bg-gray-100">
 			<div class="container mx-auto">
 				<div class="max-w-2xl mx-auto text-center mb-12">
-					<h2 class="text-3xl font-semibold">Venue</h2>
+					<h2 class="text-3xl font-semibold tracking-widest">Venue</h2>
 				</div>
 				<div class="event-wrap animate-box max-w-md mx-auto text-center mb-8">
 					<div class="flex justify-center space-x-8 mb-4">
@@ -125,7 +142,7 @@
 				<div class="text-center animate-box mt-5">
 					<div class="max-w-2xl mx-auto">
 						<h3 class="text-2xl font-semibold mb-4">Additional Information</h3>
-						<ul class="list-none text-left mb-12">
+						<ul class="list-none text-left mb-8 text-lg">
 							<li class="mb-2">• Parking is available at the venue.</li>
 							<li class="mb-2">• Ubers and taxis can take you to/from the location.</li>
 							<li class="mb-2">• It is an outdoor wedding and the weather may be chilly. Please dress
@@ -137,63 +154,182 @@
 		</div>
 
 
+		<!-- Itinerary Section -->
 		<section class="relative bg-cover bg-center" style="background-image:url(images/holding-sun-shadow.JPG);"
 			data-stellar-background-ratio="0.5">
 			<div class="absolute inset-0 bg-black opacity-50"></div>
-			<div class="container mx-auto relative z-10 flex items-center justify-center min-h-screen">
+			<div class="container mx-auto relative z-10 py-24">
 				<div class="text-center animate-box" data-animate-effect="fadeIn">
-					<h2 class="text-3xl font-semibold text-white">Itinerary</h2>
+					<h2 class="text-3xl font-semibold text-white mb-8 tracking-widest">Itinerary</h2>
+					<div class="max-w-3xl mx-auto text-white">
+						<ul class="list-disc list-inside text-left text-lg">
+							<li class="mb-4">
+								<strong>12:00 PM:</strong> Religious ceremony begins
+							</li>
+							<li class="mb-4">
+								<strong>1:00 PM:</strong> Religious ceremony ends
+							</li>
+							<li class="mb-4">
+								<strong>1:30 PM:</strong> Cocktail hour
+							</li>
+							<li class="mb-4">
+								<strong>2:00 PM:</strong> Reception
+							</li>
+							<li class="mb-4">
+								<strong>5:00 PM:</strong> Dancefloor opens
+							</li>
+							<li class="mb-4">
+								<strong>8:00 PM:</strong> Dinner
+							</li>
+							<li class="mb-4">
+								<strong>9:30 PM:</strong> End of the ceremony
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <div id="fh5co-event" class="relative bg-cover bg-center" style="background-image: url('images/event-bg.jpg');">
-			<div class="absolute inset-0 bg-black opacity-50"></div>
-			<div class="container mx-auto relative z-10 py-24">
-				<div class="max-w-2xl mx-auto text-center mb-12">
-				</div>
-			</div>
-		</div> -->
 
-
-		<!-- Accommodations Section -->
-		<div id="fh5co-accommodations" class="py-24 bg-gray-100">
+		<!-- Gallery Section -->
+		<div id="fh5co-gallery" class="py-24 bg-gray-100">
 			<div class="container mx-auto">
 				<div class="max-w-2xl mx-auto text-center mb-12">
-					<h2 class="text-3xl font-semibold">Accommodations</h2>
+					<h2 class="text-3xl font-semibold">Gallery</h2>
 				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-					<div class="text-center">
-						<div class="hotel-wrap animate-box p-6 bg-white shadow-lg">
-							<h3 class="text-2xl font-semibold mb-4">Hangar Select Hotel GDL</h3>
-							<div class="text-left mb-4">
-								<p><i class="icon-location-pin mr-2"></i> Av solidaridad 7864, Lomas de aeropuerto,
-									45693 Las
-									Pintitas, Jal., Mexico</p>
-								<p><i class="icon-phone mr-2"></i> Phone: +52 33 3687 9092</p>
-							</div>
-							<a href="https://hotel-hangar-select.mx/" target="_blank"
-								class="inline-block px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Visit
-								Website</a>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<!-- Image 1 -->
+					<figure class="animate-box">
+						<a href="images/pic1.jpg" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+							<img src="images/pic1.jpg" alt="Gallery Image 1" class="w-full h-auto">
+						</a>
+					</figure>
+					<!-- Image 2 -->
+					<figure class="animate-box">
+						<a href="images/pic2.jpg" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+							<img src="images/pic2.jpg" alt="Gallery Image 2" class="w-full h-auto">
+						</a>
+					</figure>
+					<!-- Image 3 -->
+					<figure class="animate-box">
+						<a href="images/pic3.jpg" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+							<img src="images/pic3.jpg" alt="Gallery Image 3" class="w-full h-auto">
+						</a>
+					</figure>
+					<figure class="animate-box">
+						<a href="images/pic4.jpg" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+							<img src="images/pic4.jpg" alt="Gallery Image 3" class="w-full h-auto">
+						</a>
+					</figure>
+					<figure class="animate-box">
+						<a href="images/pic5.jpg" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+							<img src="images/pic5.jpg" alt="Gallery Image 3" class="w-full h-auto">
+						</a>
+					</figure>
+					<figure class="animate-box">
+						<a href="images/pic6.jpg" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+							<img src="images/pic6.jpg" alt="Gallery Image 3" class="w-full h-auto">
+						</a>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<!-- FAQ Section -->
+		<div id="fh5co-faq" class="py-24 bg-white">
+			<div class="container mx-auto">
+				<div class="max-w-2xl mx-auto text-center mb-12">
+					<h2 class="text-3xl font-semibold">Frequently Asked Questions</h2>
+				</div>
+				<div class="max-w-3xl mx-auto">
+					<div class="space-y-6">
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Are children allowed?</h3>
+							<p>Yes! We welcome your little ones and we expect many to bring their newborns, toddlers and
+								kids!</p>
 						</div>
-					</div>
-					<div class="text-center">
-						<div class="hotel-wrap animate-box p-6 bg-white shadow-lg">
-							<h3 class="text-2xl font-semibold mb-4">Hilton Garden Inn Guadalajara Airport</h3>
-							<div class="text-left mb-4">
-								<p><i class="icon-location-pin mr-2"></i> Carr. Guadalajara - Chapala Km 17.5, 45659
-									Guadalajara,
-									Jal., Mexico</p>
-								<p><i class="icon-phone mr-2"></i> Phone: +52 33 9689 4200</p>
-							</div>
-							<a href="https://www.hilton.com/es/book/reservation/deeplink/?ctyhocn=GDLAPGI&groupCode=BODLYM&arrivaldate=2025-01-25&departuredate=2025-01-28&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
-								target="_blank"
-								class="inline-block px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Visit
-								Website</a>
+						<div>
+							<h3 class="text-xl font-semibold mb-2">What is the dress code?</h3>
+							<p>Semi-formal attire is requested. The event is outdoors and the weather is expected to be
+								chilly, so please dress warmly.</p>
 						</div>
+						<div>
+							<h3 class="text-xl font-semibold mb-2">What should I bring if I'm traveling internationally?
+							</h3>
+							<p>At least your passport and a pen (to fill out customs forms). GDL airport is nearest!</p>
+						</div>
+						<div>
+							<h3 class="text-xl font-semibold mb-2">What's the best way to get around?</h3>
+							<p>Uber!</p>
+						</div>
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Can I bring a guest?</h3>
+							<p>We have reserved seats for those named on your invitation. Please contact us if you have
+								any questions.</p>
+						</div>
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Is parking available at the venue?</h3>
+							<p>Yes, there is some parking available at the venue for guests but we recommend Uber'ing.
+							</p>
+						</div>
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Is the water safe to drink?</h3>
+							<p>Water that is served at any venue (even on the street) in Mexico comes from bottled
+								sources. Do not drink water directly from the tap at your airbnb or hotel.</p>
+						</div>
+						<!-- Add more FAQs as needed -->
 					</div>
 				</div>
 			</div>
 		</div>
+
+
+		<!-- Accommodations Section -->
+		<section class="relative bg-cover bg-center" style="background-image:url(images/pic7.jpg);"
+			data-stellar-background-ratio="0.5">
+			<div class="absolute inset-0 bg-black opacity-50"></div>
+			<div class="container mx-auto relative z-10 py-24">
+				<div class="text-center animate-box" data-animate-effect="fadeIn">
+					<div class="container mx-auto">
+						<div class="max-w-2xl mx-auto text-center mb-12">
+							<h2 class="text-3xl font-semibold text-white">Accommodations</h2>
+						</div>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+							<div class="text-center">
+								<div class="hotel-wrap animate-box p-6 bg-[#ffffffdd] shadow-lg rounded-md">
+									<h3 class="text-2xl font-semibold mb-4">Hangar Select Hotel GDL</h3>
+									<div class="text-left mb-4">
+										<p><i class="icon-location-pin mr-2"></i> Av solidaridad 7864, Lomas de
+											aeropuerto,
+											45693 Las
+											Pintitas, Jal., Mexico</p>
+										<p><i class="icon-phone mr-2"></i> Phone: +52 33 3687 9092</p>
+									</div>
+									<a href="https://hotel-hangar-select.mx/" target="_blank"
+										class="inline-block px-6 py-2 bg-stone-500 text-slate-100 rounded hover:bg-stone-600">Book
+									</a>
+								</div>
+							</div>
+							<div class="text-center">
+								<div class="hotel-wrap animate-box p-6 bg-[#ffffffdd] shadow-lg rounded-md">
+									<h3 class="text-2xl font-semibold mb-4">Hilton Garden Inn Guadalajara Airport</h3>
+									<div class="text-left mb-4">
+										<p><i class="icon-location-pin mr-2"></i> Carr. Guadalajara - Chapala Km 17.5,
+											45659
+											Guadalajara,
+											Jal., Mexico</p>
+										<p><i class="icon-phone mr-2"></i> Phone: +52 33 9689 4200</p>
+									</div>
+									<a href="https://www.hilton.com/es/book/reservation/deeplink/?ctyhocn=GDLAPGI&groupCode=BODLYM&arrivaldate=2025-01-25&departuredate=2025-01-28&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
+										target="_blank"
+										class="inline-block px-6 py-2 bg-stone-500 text-slate-100 rounded hover:bg-stone-600">Visit
+										Website</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- Gift Registry Section -->
 		<div id="fh5co-gift" class="relative bg-cover bg-center" style="background-image: url('images/gift-bg.jpg');">
@@ -205,7 +341,7 @@
 						have
 						expressed an interest, a registry has been created for your convenience.</p>
 					<a href="https://www.amazon.com.mx/wedding/registry/W86A76YL0PF6" target="_blank"
-						class="inline-block px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">View
+						class="inline-block px-6 py-2 bg-stone-500 text-slate-100 rounded hover:bg-stone-600">View
 						Registry</a>
 				</div>
 			</div>
@@ -237,10 +373,158 @@
 		<!-- Magnific Popup -->
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/magnific-popup-options.js"></script>
-		<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-		<script src="js/simplyCountdown.js"></script>
+		<!-- Photoswipe JS -->
+		<script src="https://unpkg.com/photoswipe/dist/photoswipe.min.js"></script>
+		<script src="https://unpkg.com/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+		<!-- Initialize Photoswipe -->
+		<script>
+			var initPhotoSwipeFromDOM = function (gallerySelector) {
+				var parseThumbnailElements = function (el) {
+					var thumbElements = el.childNodes,
+						numNodes = thumbElements.length,
+						items = [],
+						figureEl,
+						linkEl,
+						size,
+						item;
+
+					for (var i = 0; i < numNodes; i++) {
+						figureEl = thumbElements[i];
+
+						if (figureEl.nodeType !== 1) {
+							continue;
+						}
+
+						linkEl = figureEl.children[0];
+
+						size = linkEl.getAttribute('data-pswp-width') + 'x' + linkEl.getAttribute('data-pswp-height');
+
+						item = {
+							src: linkEl.getAttribute('href'),
+							w: parseInt(linkEl.getAttribute('data-pswp-width'), 10),
+							h: parseInt(linkEl.getAttribute('data-pswp-height'), 10),
+							title: linkEl.getAttribute('data-caption')
+						};
+
+						item.el = figureEl;
+						items.push(item);
+					}
+
+					return items;
+				};
+
+				var onThumbnailsClick = function (e) {
+					e = e || window.event;
+					e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+					var eTarget = e.target || e.srcElement;
+
+					var clickedListItem = eTarget.closest('figure');
+
+					if (!clickedListItem) {
+						return;
+					}
+
+					var clickedGallery = clickedListItem.parentNode;
+
+					var childNodes = clickedGallery.childNodes,
+						numChildNodes = childNodes.length,
+						nodeIndex = 0,
+						index;
+
+					for (var i = 0; i < numChildNodes; i++) {
+						if (childNodes[i].nodeType !== 1) {
+							continue;
+						}
+
+						if (childNodes[i] === clickedListItem) {
+							index = nodeIndex;
+							break;
+						}
+						nodeIndex++;
+					}
+
+					if (index >= 0) {
+						openPhotoSwipe(index, clickedGallery);
+					}
+					return false;
+				};
+
+				var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
+					var pswpElement = document.querySelectorAll('.pswp')[0],
+						gallery,
+						options,
+						items;
+
+					items = parseThumbnailElements(galleryElement);
+
+					options = {
+						galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+						index: index,
+						getThumbBoundsFn: function (index) {
+							var thumbnail = items[index].el.getElementsByTagName('img')[0],
+								pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+								rect = thumbnail.getBoundingClientRect();
+
+							return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+						}
+					};
+
+					gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+					gallery.init();
+				};
+
+				var galleryElements = document.querySelectorAll(gallerySelector);
+
+				for (var i = 0, l = galleryElements.length; i < l; i++) {
+					galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+					galleryElements[i].onclick = onThumbnailsClick;
+				}
+			};
+
+			initPhotoSwipeFromDOM('.grid');
+		</script>
+
 		<!-- Main -->
 		<script src="js/main.js"></script>
+
+		<!-- PhotoSwipe Core HTML -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="pswp__bg"></div>
+			<div class="pswp__scroll-wrap">
+				<div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				</div>
+				<div class="pswp__ui pswp__ui--hidden">
+					<div class="pswp__top-bar">
+						<div class="pswp__counter"></div>
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+						<button class="pswp__button pswp__button--share" title="Share"></button>
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+								<div class="pswp__preloader__cut">
+									<div class="pswp__preloader__donut"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div>
+					</div>
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 </body>
 
 </html>

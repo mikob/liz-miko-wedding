@@ -28,6 +28,13 @@
     font-style: italic;
 }
 
+.font2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .cursive {
     font-family: "Cedarville Cursive", cursive;
     font-weight: 400;
@@ -85,7 +92,6 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #646464;
     outline: none;
     text-decoration: none;
 }
@@ -101,9 +107,9 @@ h4,
 h5,
 h6,
 figure {
+    font-family: "Playfair Display";
     color: #000;
-    font-family: "Old Standard TT", Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0 0 20px 0;
 }
 
@@ -915,7 +921,7 @@ form label {
     font-size: 20px;
     line-height: 1.5;
     margin-top: 20px;
-    font-family: Engagement;
+    font-family: "Cedarville Cursive", sans;
 }
 @media screen and (max-width: 480px) {
     #fh5co-header .display-tc h2,
