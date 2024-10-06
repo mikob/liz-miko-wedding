@@ -35,6 +35,13 @@
     font-style: normal;
 }
 
+.font3 {
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .cursive {
     font-family: "Cedarville Cursive", cursive;
     font-weight: 400;
