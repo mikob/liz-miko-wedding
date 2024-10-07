@@ -43,8 +43,9 @@
 }
 
 .cursive {
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Dancing Script", cursive;
     font-weight: 400;
+    font-optical-sizing: auto;
     font-style: normal;
 }
 
@@ -54,7 +55,8 @@
 *
 * ======================================================= */
 body {
-    font-family: "Old Standard TT", Arial, sans-serif;
+    /* font-family: "Old Standard TT", Arial, sans-serif; */
+    font-family: "Afacad Flux", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -114,7 +116,8 @@ h4,
 h5,
 h6,
 figure {
-    font-family: "Playfair Display";
+    font-family: "Afacad Flux", serif;
+    /* font-family: "Playfair Display"; */
     color: #000;
     font-weight: 700;
     margin: 0 0 20px 0;
@@ -481,7 +484,7 @@ figure {
     padding-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: Old Standard TT;
+    font-family: "Old Standard TT", serif;
     font-size: 25px;
 }
 #fh5co-counter .event-wrap p,
@@ -928,7 +931,7 @@ form label {
     font-size: 20px;
     line-height: 1.5;
     margin-top: 20px;
-    font-family: "Cedarville Cursive", sans;
+    font-family: "Dancing Script", sans;
 }
 @media screen and (max-width: 480px) {
     #fh5co-header .display-tc h2,
