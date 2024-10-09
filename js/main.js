@@ -1,6 +1,12 @@
 (function () {
     "use strict";
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const invitationName = urlParams.get("i");
+    if (invitationName) {
+        $("#invitationName").text(invitationName);
+    }
+
     var contentWayPoint = function () {
         var i = 0;
         $(".animate-box").waypoint(
