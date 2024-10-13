@@ -7,6 +7,15 @@
         $("#invitationName").text(invitationName);
     }
 
+    const rsvpEls = document.querySelectorAll(".RSVPLink");
+    rsvpEls.forEach((rsvpEl) => {
+        rsvpEl.href = `https://wa.me/+523221316437?text=${encodeURIComponent(
+            "(edit the message to ensure names are correct) Confirming attendance for " +
+                invitationName +
+                " at the Jan. 26th wedding of Liz & Miko \nOur dietary restrictions are:\n-\n-\n-"
+        )}`;
+    });
+
     var contentWayPoint = function () {
         var i = 0;
         $(".animate-box").waypoint(
@@ -106,7 +115,9 @@
 
     // Parallax
     var parallax = function () {
-        $(window).stellar();
+        $(window).stellar({
+            horizontalScrolling: false,
+        });
     };
 
     $(function () {

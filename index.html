@@ -57,7 +57,8 @@
 	<div id="page">
 
 		<header id="fh5co-header" role="banner" class="relative bg-cover bg-center"
-			style="background-image:url(images/bg.webp);" data-stellar-background-ratio="0.5">
+			style="background-image:url(images/bg.webp);" data-stellar-background-ratio="0.5" horizontalScrolling:
+			true,>
 			<!-- Fireflies -->
 			<div class="firefly"></div>
 			<div class="firefly"></div>
@@ -82,9 +83,9 @@
 			</div>
 			<div class="container mx-auto relative z-10 flex items-center justify-center min-h-screen pt-16 md:pt-0">
 				<div class="text-center animate-box" data-animate-effect="fadeIn">
-					<h1 class="text-white text-8xl font-light font2">Liz &amp; Miko</h1>
+					<h1 class="text-white text-7xl md:text-8xl font-light font2">Liz &amp; Miko</h1>
 					<br>
-					<img src="images/tree.png" alt="Liz + Miko" class="mx-auto w-72 h-72 opacity-50"
+					<img src="images/tree.png" alt="Liz + Miko" class="mx-auto w-36 h-36 md:w-72 md:h-72 opacity-50"
 						style="border-radius: 100%;">
 					<h2 class="text-white text-2xl mt-4 font1-italic">January 26, 2025</h2>
 					<h2 class="text-white text-5xl mt-2 cursive">Guadalajara, Mexico</h2>
@@ -94,13 +95,11 @@
 					<h2 id="invitationName" class="text-white font2 text-4xl mt-32"></h2>
 				</div>
 			</div>
-			<p class="text-gray-300 mt-14 font1 relative bottom-10 w-full text-center">Please RSVP by responding to the
-				email
-				or
-				WhatsApp
-				message where
-				you received this
-				link.</p>
+			<p class="text-gray-300 mt-14 font1 relative bottom-10 w-full text-center max-w-xl mx-auto">
+				<a href="#"
+					class="RSVPLink inline-block px-6 py-2 bg-[#4e6150] text-slate-100 rounded hover:bg-stone-600"
+					target="_blank">RSVP</a>
+			</p>
 		</header>
 
 
@@ -164,7 +163,7 @@
 									<span>Reception</span>
 									<i class="icon-clock text-2xl mr-1 ml-5"></i>
 									<span class="text-gray-700">
-										1:00 PM
+										1:30 PM
 									</span>
 								</h3>
 								<p class="text-xl">At <b>Casa del Lago, Tonalá, Jalisco</b></p>
@@ -604,18 +603,14 @@
 			</div>
 		</div>
 
-		<p class="text-white bg-[#5c564f] py-14 font1 w-full text-center">Please RSVP by
-			responding to the
-			email
-			or
-			WhatsApp
-			message where
-			you received this
-			link.</p>
+		<div class="bg-[#5c564f] py-14 mx-auto text-center">
+			<a href="#" class="RSVPLink inline-block px-6 py-2 bg-[#4e6150] text-slate-100 rounded hover:bg-stone-600"
+				target="_blank">RSVP</a>
+		</div>
 
-
-		<div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		<!-- Stylized "Not Sponsored by Twitter" -->
+		<div class="flex justify-center items-center bg-[#FF5864] text-white py-2 text-sm">
+			<p class="text-sm">not sponsored by Tinder</p>
 		</div>
 
 		<!-- jQuery -->
