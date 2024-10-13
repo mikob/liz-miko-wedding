@@ -8,12 +8,26 @@
     }
 
     const rsvpEls = document.querySelectorAll(".RSVPLink");
+    const RSVPBase = `https://wa.me/+523319404769?text=`;
     rsvpEls.forEach((rsvpEl) => {
-        rsvpEl.href = `https://wa.me/+523221316437?text=${encodeURIComponent(
-            "(edit the message to ensure names are correct) Confirming attendance for " +
-                invitationName +
-                " at the Jan. 26th wedding of Liz & Miko \nOur dietary restrictions are:\n-\n-\n-"
-        )}`;
+        if (document.location.pathname.includes("es.html")) {
+            rsvpEl.href = `${RSVPBase}${encodeURIComponent(
+                "(edita el mensaje para asegurarte de que los nombres sean correctos) Confirmando asistencia para " +
+                    invitationName +
+                    " en la boda de Liz y Miko el 26 de enero \nNuestras restricciones dietéticas son:\n-\n-\n-"
+            )}`;
+        } else {
+            rsvpEl.href = `${RSVPBase}${encodeURIComponent(
+                "(edit the message to ensure names are correct) Confirming attendance for " +
+                    invitationName +
+                    " at the Jan. 26th wedding of Liz & Miko \nOur dietary restrictions are:\n-\n-\n-"
+            )}`;
+        }
+    });
+
+    const langSwitchEls = document.querySelectorAll(".lang-switch");
+    langSwitchEls.forEach((langSwitchEl) => {
+        langSwitchEl.href = `${langSwitchEl.href}${window.location.search}`;
     });
 
     var contentWayPoint = function () {
