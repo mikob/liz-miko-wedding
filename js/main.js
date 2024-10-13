@@ -30,6 +30,25 @@
         langSwitchEl.href = `${langSwitchEl.href}${window.location.search}`;
     });
 
+    window.addEventListener("click", function () {
+        var audio = document.getElementById("bg-sound");
+
+        // debugger;
+        if (
+            event.target.tagName !== "BUTTON" &&
+            event.target.tagName !== "A" &&
+            !event.target.parentNode.getAttribute("data-pswp-width") &&
+            !event.target.classList.contains("pswp__item") &&
+            !event.target.classList.contains("pswp__img")
+        ) {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    });
+
     var contentWayPoint = function () {
         var i = 0;
         $(".animate-box").waypoint(
