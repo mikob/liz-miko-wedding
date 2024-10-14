@@ -12,13 +12,13 @@
     rsvpEls.forEach((rsvpEl) => {
         if (document.location.pathname.includes("es.html")) {
             rsvpEl.href = `${RSVPBase}${encodeURIComponent(
-                "(edita el mensaje para asegurarte de que los nombres sean correctos) Confirmando asistencia para " +
+                "(Favor de editar el mensaje para asegurar que los nombres sean correctos) Confirmando mi asistencia para " +
                     invitationName +
-                    " en la boda de Liz y Miko el 26 de enero \nNuestras restricciones dietéticas son:\n-\n-\n-"
+                    " en la boda de Liz y Miko el 26 de enero del 2025. \nNuestras restricciones alimentarias son:\n-\n-\n-"
             )}`;
         } else {
             rsvpEl.href = `${RSVPBase}${encodeURIComponent(
-                "(edit the message to ensure names are correct) Confirming attendance for " +
+                "(Please edit the message to ensure names are correct) Confirming attendance for " +
                     invitationName +
                     " at the Jan. 26th wedding of Liz & Miko \nOur dietary restrictions are:\n-\n-\n-"
             )}`;
