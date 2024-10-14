@@ -32,7 +32,10 @@
 
     const player = document.getElementById("player");
     var sound = new Howl({
-        src: ["sound/loeffler.m4a", "loeffler.mp3"],
+        src: [
+            "https://mikob.github.io/liz-miko-wedding/sound/loeffler.m4a",
+            "https://mikob.github.io/liz-miko-wedding/sound/loeffler.mp3",
+        ],
         autoplay: false,
         onplayerror: function () {
             sound.once("unlock", function () {
