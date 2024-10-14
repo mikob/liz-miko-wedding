@@ -39,7 +39,6 @@
         autoplay: false,
         onplayerror: function () {
             sound.once("unlock", function () {
-                alert("unocked");
                 sound.play();
             });
         },
