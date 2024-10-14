@@ -30,23 +30,47 @@
         langSwitchEl.href = `${langSwitchEl.href}${window.location.search}`;
     });
 
-    window.addEventListener("click", function () {
-        var audio = document.getElementById("bg-sound");
+    const player = document.getElementById("player");
+    var sound = new Howl({
+        src: ["sound/loeffler.m4a", "loeffler.mp3"],
+        autoplay: false,
+        onplayerror: function () {
+            sound.once("unlock", function () {
+                alert("unocked");
+                sound.play();
+            });
+        },
+    });
 
-        // debugger;
+    sound.play();
+
+    function toggleSound(event) {
         if (
-            event.target.tagName !== "BUTTON" &&
-            event.target.tagName !== "A" &&
-            !event.target.parentNode.getAttribute("data-pswp-width") &&
-            !event.target.classList.contains("pswp__item") &&
-            !event.target.classList.contains("pswp__img")
+            event.target.id === "player" ||
+            (event.target.tagName !== "BUTTON" &&
+                event.target.tagName !== "A" &&
+                !event.target.parentNode.getAttribute("data-pswp-width") &&
+                !event.target.classList.contains("pswp__item") &&
+                !event.target.classList.contains("pswp__img"))
         ) {
-            if (audio.paused) {
-                audio.play();
+            event.preventDefault();
+            if (!sound.playing()) {
+                sound.play();
             } else {
-                audio.pause();
+                sound.pause();
             }
         }
+    }
+    player.addEventListener("click", function (event) {
+        toggleSound(event);
+    });
+    player.addEventListener("touchstart", function (event) {
+        // document.body.innerHTML = "touch";
+        // debugger;
+        toggleSound(event);
+    });
+    document.addEventListener("click", function (event) {
+        toggleSound(event);
     });
 
     var contentWayPoint = function () {

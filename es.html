@@ -40,6 +40,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/howler.min.js"></script>
 	<!-- Para IE9 o inferior -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -51,6 +52,8 @@
 
 	<div class="fh5co-loader"></div>
 
+	<a href="#" id="player" class="fixed inline-block bottom-2 right-2 p-3 bg-[#eeeeeeaa] rounded-full"
+		style="z-index: 100">🎵</a>
 	<div id="page">
 
 		<header id="fh5co-header" role="banner" class="relative bg-cover bg-center"
@@ -411,6 +414,9 @@
 				<div class="max-w-2xl mx-auto text-center mb-12">
 					<h2 class="text-5xl font-semibold">Galería</h2>
 				</div>
+				<p class="cursive text-3xl mb-16 text-center animate-box">"Éramos dos almas destinadas a encontrarse,
+					una hermosa
+					coincidencia en el vasto universo."</p>
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="gallery">
 					<!-- Imagen 1 -->
 					<figure class="animate-box">
@@ -622,10 +628,6 @@
 		<!-- Main -->
 		<script src="js/main.js"></script>
 
-		<audio autoplay id="bg-sound">
-			<source src="sound/loeffler.m4a" type="audio/m4a">
-			<source src="sound/loeffler.mp3" type="audio/mpeg">
-		</audio>
 	</div>
 </body>
 
